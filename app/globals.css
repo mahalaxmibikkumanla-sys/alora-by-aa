@@ -1,26 +1,218 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* =========================================================================
+   AlorA by AA — Design Tokens
+   "A beautiful summer memory transformed into a luxury fashion brand."
+   ========================================================================= */
+
+@theme {
+  /* ---- Color: Primary (warm neutrals) ---- */
+  --color-jasmine: #fdfbf6; /* Jasmine White — page base */
+  --color-ivory: #f6efe3; /* Warm Ivory — alt sections */
+  --color-sand: #e7d8c2; /* Soft Sand Beige — cards, fills */
+  --color-sand-deep: #d8c4a6; /* deeper sand for borders/contrast */
+
+  /* ---- Color: Secondary (accents, used sparingly) ---- */
+  --color-mango: #c0913f; /* Muted Mango Gold — premium accent */
+  --color-mango-soft: #d8b878; /* lighter gold for hovers/lines */
+  --color-sage: #9aa88c; /* Soft Sage Green — botanical accent */
+  --color-sage-soft: #c2cdb6;
+
+  /* ---- Color: Typography ---- */
+  --color-charcoal: #2b2926; /* Deep Charcoal — primary text */
+  --color-taupe: #6b6458; /* muted body text */
+  --color-line: #e6dcc9; /* hairline dividers */
+
+  /* ---- Fonts (wired to next/font variables in layout.tsx) ---- */
+  --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-mulish), ui-sans-serif, system-ui, sans-serif;
+
+  /* ---- Editorial type scale (fluid, mobile-first) ---- */
+  --text-display: clamp(2.75rem, 7vw, 5.5rem);
+  --text-h1: clamp(2.25rem, 5.5vw, 4rem);
+  --text-h2: clamp(1.75rem, 4vw, 2.75rem);
+  --text-h3: clamp(1.35rem, 2.6vw, 1.85rem);
+  --text-eyebrow: 0.72rem;
+
+  /* ---- Soft shadows (never harsh) ---- */
+  --shadow-soft: 0 18px 40px -24px rgba(43, 41, 38, 0.22);
+  --shadow-lift: 0 26px 60px -28px rgba(43, 41, 38, 0.32);
+
+  /* ---- Motion: "silk moving in a gentle summer breeze" ---- */
+  --ease-silk: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* ---- Layout ---- */
+  --container: 80rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* =========================================================================
+   Base
+   ========================================================================= */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-jasmine);
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    color: var(--color-charcoal);
+  }
+
+  /* Respect users who prefer less motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  ::selection {
+    background: var(--color-mango-soft);
+    color: var(--color-charcoal);
+  }
+
+  /* Accessible, on-brand focus ring */
+  :focus-visible {
+    outline: 2px solid var(--color-mango);
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* =========================================================================
+   Reusable brand utilities
+   ========================================================================= */
+
+@layer components {
+  .container-px {
+    width: 100%;
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .container-px {
+      padding-inline: 2.5rem;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container-px {
+      padding-inline: 4rem;
+    }
+  }
+
+  /* Eyebrow / kicker label above headings */
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: var(--text-eyebrow);
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-mango);
+  }
+
+  /* Editorial display headings */
+  .display {
+    font-family: var(--font-display);
+    font-size: var(--text-display);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+  }
+
+  /* Warm linen-like texture overlay (very subtle) */
+  .texture-linen {
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        rgba(43, 41, 38, 0.015) 0px,
+        rgba(43, 41, 38, 0.015) 1px,
+        transparent 1px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(43, 41, 38, 0.015) 0px,
+        rgba(43, 41, 38, 0.015) 1px,
+        transparent 1px,
+        transparent 4px
+      );
+  }
+
+  /* Thin gold underline used under links/headings */
+  .rule-gold {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-mango-soft),
+      transparent
+    );
+    height: 1px;
+  }
+}
+
+/* =========================================================================
+   Motion — scroll reveal ("silk in a summer breeze")
+   ========================================================================= */
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+      opacity 1.1s var(--ease-silk),
+      transform 1.1s var(--ease-silk);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* On-load entrance for above-the-fold content (no scroll observer needed,
+     so the hero is always present for SEO/LCP and never flashes blank). */
+  @keyframes silk-rise {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .animate-rise {
+    animation: silk-rise 1.2s var(--ease-silk) both;
+  }
+
+  /* slow image breathing on hover for editorial cards */
+  .img-breathe {
+    transition: transform 1.4s var(--ease-silk);
+  }
+  .group:hover .img-breathe {
+    transform: scale(1.045);
+  }
 }
