@@ -1,5 +1,6 @@
 import Reveal from "../ui/Reveal";
 import WaveDivider from "../ui/WaveDivider";
+import Photo from "../ui/Photo";
 import type { SVGProps } from "react";
 
 const pillars = [
@@ -27,8 +28,18 @@ const pillars = [
 
 export default function Craftsmanship() {
   return (
-    <section className="relative bg-charcoal text-jasmine">
-      <div className="container-px py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-charcoal text-jasmine">
+      {/* faint draped-fabric texture for depth */}
+      <div className="absolute inset-0 opacity-[0.12]">
+        <Photo
+          imageKey="T5"
+          alt=""
+          tone="shade"
+          sizes="100vw"
+          className="h-full w-full"
+        />
+      </div>
+      <div className="container-px relative z-10 py-20 lg:py-28">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="eyebrow text-mango-soft">Craftsmanship</p>
           <h2 className="mt-4 font-display text-[clamp(1.75rem,4vw,2.75rem)] leading-tight text-jasmine">

@@ -20,7 +20,7 @@ export default function BestSellers() {
         </Reveal>
 
         <div className="mt-12 grid grid-cols-2 gap-x-5 gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-          {bestSellers.map((product, i) => (
+          {bestSellers.slice(0, 4).map((product, i) => (
             <Reveal key={product.id} delay={i * 80}>
               <ProductCard product={product} />
             </Reveal>

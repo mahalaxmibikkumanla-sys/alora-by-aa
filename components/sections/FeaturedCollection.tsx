@@ -1,5 +1,5 @@
 import { ButtonLink } from "../ui/Button";
-import ImagePlaceholder from "../ui/ImagePlaceholder";
+import Photo from "../ui/Photo";
 import Reveal from "../ui/Reveal";
 
 export default function FeaturedCollection() {
@@ -9,11 +9,12 @@ export default function FeaturedCollection() {
         <Reveal className="relative overflow-hidden rounded-[2px]">
           <div className="relative aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]">
             <div className="absolute inset-0">
-              <ImagePlaceholder
+              <Photo
+                imageKey="F14"
+                alt="Summer Bloom campaign — a flowing silhouette on the beach at golden hour"
                 tone="gold"
-                rounded={false}
-                sprig={false}
-                label="Featured — Summer Bloom campaign, flowing silhouettes at golden hour"
+                sizes="100vw"
+                className="h-full w-full"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-r from-charcoal/55 via-charcoal/15 to-transparent" />

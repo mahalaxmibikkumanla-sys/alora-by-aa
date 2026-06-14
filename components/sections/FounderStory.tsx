@@ -1,5 +1,5 @@
 import { ButtonLink } from "../ui/Button";
-import ImagePlaceholder from "../ui/ImagePlaceholder";
+import Photo from "../ui/Photo";
 import Reveal from "../ui/Reveal";
 import JasmineSprig from "../ui/JasmineSprig";
 
@@ -10,12 +10,20 @@ export default function FounderStory() {
         {/* portrait pair */}
         <Reveal className="order-2 lg:order-1">
           <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] translate-y-6">
-              <ImagePlaceholder tone="sand" label="Alekhya, at the studio" />
-            </div>
-            <div className="aspect-[3/4]">
-              <ImagePlaceholder tone="sage" label="Akhila, choosing fabric" />
-            </div>
+            <Photo
+              imageKey="W2"
+              alt="Two friends sitting together at golden hour, where AlorA began"
+              tone="gold"
+              sizes="(min-width:1024px) 25vw, 50vw"
+              className="aspect-[3/4] translate-y-6"
+            />
+            <Photo
+              imageKey="W6"
+              alt="Alekhya and Akhila, the founders of AlorA, laughing together"
+              tone="dawn"
+              sizes="(min-width:1024px) 25vw, 50vw"
+              className="aspect-[3/4]"
+            />
           </div>
         </Reveal>
 

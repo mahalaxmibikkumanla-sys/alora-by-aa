@@ -1,12 +1,12 @@
 import Reveal from "../ui/Reveal";
-import ImagePlaceholder from "../ui/ImagePlaceholder";
-import type { Tone } from "../ui/ImagePlaceholder";
+import Photo from "../ui/Photo";
+import type { ImageKey } from "@/lib/images";
 
 type Review = {
   quote: string;
   name: string;
   location: string;
-  tone: Tone;
+  avatar: ImageKey;
 };
 
 const reviews: Review[] = [
@@ -15,21 +15,21 @@ const reviews: Review[] = [
       "The fabric feels like a second skin. I&rsquo;ve never had so many compliments on a single dress.",
     name: "Priya R.",
     location: "Mumbai, India",
-    tone: "ivory",
+    avatar: "P5",
   },
   {
     quote:
       "It arrived wrapped like a gift. You can feel the care in every detail — this is real craftsmanship.",
     name: "Sofia M.",
     location: "London, UK",
-    tone: "sand",
+    avatar: "P8",
   },
   {
     quote:
       "Elegant, comfortable, and timeless. AlorA has quietly become my favourite wardrobe.",
     name: "Aisha K.",
     location: "Dubai, UAE",
-    tone: "dawn",
+    avatar: "P1",
   },
 ];
 
@@ -56,9 +56,13 @@ export default function CustomerLove() {
                   dangerouslySetInnerHTML={{ __html: `&ldquo;${r.quote}&rdquo;` }}
                 />
                 <figcaption className="mt-7 flex items-center gap-3">
-                  <span className="h-11 w-11 overflow-hidden rounded-full">
-                    <ImagePlaceholder tone={r.tone} sprig={false} className="h-full w-full" />
-                  </span>
+                  <Photo
+                    imageKey={r.avatar}
+                    alt={`${r.name}, verified AlorA customer`}
+                    tone="sand"
+                    sizes="44px"
+                    className="h-11 w-11 shrink-0 rounded-full"
+                  />
                   <span>
                     <span className="block text-sm font-semibold text-charcoal">{r.name}</span>
                     <span className="block text-[0.7rem] uppercase tracking-[0.16em] text-taupe">

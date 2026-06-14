@@ -2,17 +2,18 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import ImagePlaceholder from "./ui/ImagePlaceholder";
+import Photo from "./ui/Photo";
 import { HeartIcon } from "./ui/icons";
 import { formatCurrency, type Product } from "@/lib/products";
 
 /**
  * Editorial product card — generous imagery, quiet typography,
- * quick-add and wishlist that appear gently on hover (and are always
- * reachable on touch). Never crowded.
+ * quick-add and wishlist that appear gently on hover (and stay reachable on
+ * touch). Never crowded.
  */
 export default function ProductCard({ product }: { product: Product }) {
   const [wished, setWished] = useState(false);
+  const onSale = product.compareAtPrice && product.compareAtPrice > product.price;
 
   return (
     <article className="group relative">
@@ -22,18 +23,23 @@ export default function ProductCard({ product }: { product: Product }) {
         aria-label={product.name}
       >
         <div className="relative aspect-[3/4]">
-          <div className="img-breathe h-full w-full">
-            <ImagePlaceholder tone={product.tone} label={product.fabric} />
-          </div>
+          <Photo
+            imageKey={product.images[0]}
+            alt={product.name}
+            tone={product.tone}
+            sizes="(min-width:1024px) 25vw, 50vw"
+            className="h-full w-full"
+            imgClassName="img-breathe"
+          />
 
           {product.badge && (
-            <span className="absolute left-3 top-3 bg-jasmine/90 px-3 py-1 text-[0.58rem] font-semibold uppercase tracking-[0.18em] text-charcoal backdrop-blur-sm">
+            <span className="absolute left-3 top-3 z-10 bg-jasmine/90 px-3 py-1 text-[0.58rem] font-semibold uppercase tracking-[0.18em] text-charcoal backdrop-blur-sm">
               {product.badge}
             </span>
           )}
 
           {/* quick add — slides up on hover, stays visible on touch */}
-          <div className="absolute inset-x-3 bottom-3 translate-y-3 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:translate-y-0 group-hover:opacity-100 max-lg:translate-y-0 max-lg:opacity-100">
+          <div className="absolute inset-x-3 bottom-3 z-10 translate-y-3 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:translate-y-0 group-hover:opacity-100 max-lg:translate-y-0 max-lg:opacity-100">
             <span className="block bg-charcoal/90 py-3 text-center text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-jasmine backdrop-blur-sm">
               Quick Add
             </span>
@@ -47,7 +53,7 @@ export default function ProductCard({ product }: { product: Product }) {
         onClick={() => setWished((w) => !w)}
         aria-pressed={wished}
         aria-label={wished ? "Remove from wishlist" : "Add to wishlist"}
-        className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-jasmine/85 text-charcoal backdrop-blur-sm transition-colors hover:text-mango"
+        className="absolute right-3 top-3 z-10 grid h-9 w-9 place-items-center rounded-full bg-jasmine/85 text-charcoal backdrop-blur-sm transition-colors hover:text-mango"
       >
         <HeartIcon
           className="h-[18px] w-[18px]"
@@ -66,9 +72,20 @@ export default function ProductCard({ product }: { product: Product }) {
               {product.name}
             </Link>
           </h3>
+          <div className="mt-1 flex items-center gap-1 text-[0.7rem] text-taupe">
+            <span className="text-mango">★</span>
+            <span>{product.rating.toFixed(1)}</span>
+            <span className="text-line">·</span>
+            <span>{product.reviewCount} reviews</span>
+          </div>
         </div>
-        <p className="whitespace-nowrap pt-1 text-sm font-medium text-charcoal">
+        <p className="whitespace-nowrap pt-1 text-right text-sm font-medium text-charcoal">
           {formatCurrency(product.price)}
+          {onSale && (
+            <span className="block text-[0.7rem] font-normal text-taupe line-through">
+              {formatCurrency(product.compareAtPrice!)}
+            </span>
+          )}
         </p>
       </div>
 

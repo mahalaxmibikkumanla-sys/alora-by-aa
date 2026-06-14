@@ -1,4 +1,4 @@
-import ImagePlaceholder from "../ui/ImagePlaceholder";
+import Photo from "../ui/Photo";
 import Reveal from "../ui/Reveal";
 import { ButtonLink } from "../ui/Button";
 
@@ -19,16 +19,40 @@ export default function Lifestyle() {
 
         <div className="mt-14 grid auto-rows-[180px] grid-cols-2 gap-4 sm:auto-rows-[220px] lg:grid-cols-4 lg:gap-6">
           <Reveal className="col-span-2 row-span-2">
-            <ImagePlaceholder tone="dawn" label="Sunlight through linen curtains" className="h-full" />
+            <Photo
+              imageKey="F14"
+              alt="Golden evenings by the sea"
+              tone="gold"
+              sizes="(min-width:1024px) 50vw, 100vw"
+              className="h-full w-full"
+            />
           </Reveal>
           <Reveal delay={80}>
-            <ImagePlaceholder tone="sage" label="Jasmine in bloom" className="h-full" />
+            <Photo
+              imageKey="J7"
+              alt="Jasmine in bloom"
+              tone="sage"
+              sizes="(min-width:1024px) 25vw, 50vw"
+              className="h-full w-full"
+            />
           </Reveal>
           <Reveal delay={160}>
-            <ImagePlaceholder tone="gold" label="Mango season" className="h-full" />
+            <Photo
+              imageKey="C7"
+              alt="A calm sunset over the water"
+              tone="dawn"
+              sizes="(min-width:1024px) 25vw, 50vw"
+              className="h-full w-full"
+            />
           </Reveal>
           <Reveal delay={120} className="col-span-2">
-            <ImagePlaceholder tone="sand" label="Calm ocean waves at dusk" className="h-full" />
+            <Photo
+              imageKey="F15"
+              alt="Sunlight through linen curtains on a slow morning"
+              tone="sand"
+              sizes="(min-width:1024px) 50vw, 100vw"
+              className="h-full w-full"
+            />
           </Reveal>
         </div>
 
