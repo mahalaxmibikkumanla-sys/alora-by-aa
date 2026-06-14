@@ -21,7 +21,7 @@ const tones: Record<Tone, string> = {
   sand: "linear-gradient(150deg, #f3e7d2 0%, #e3cfae 55%, #cdb389 100%)",
   sage: "linear-gradient(150deg, #e7ead9 0%, #c2cdb6 55%, #9aa88c 100%)",
   gold: "linear-gradient(150deg, #f0dcb4 0%, #d8b878 50%, #c0913f 100%)",
-  shade: "linear-gradient(150deg, #6b6458 0%, #4a453d 60%, #2b2926 100%)",
+  shade: "linear-gradient(150deg, #8a6a4c 0%, #5d4632 55%, #3a2c20 100%)",
   ivory: "linear-gradient(150deg, #fdfbf6 0%, #f6efe3 60%, #ece0cc 100%)",
 };
 

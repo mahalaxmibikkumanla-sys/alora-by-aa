@@ -28,7 +28,7 @@ const pillars = [
 
 export default function Craftsmanship() {
   return (
-    <section className="relative overflow-hidden bg-charcoal text-jasmine">
+    <section className="relative overflow-hidden bg-espresso text-jasmine">
       {/* faint draped-fabric texture for depth */}
       <div className="absolute inset-0 opacity-[0.12]">
         <Photo

@@ -17,7 +17,7 @@ export default function FeaturedCollection() {
                 className="h-full w-full"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-charcoal/55 via-charcoal/15 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-espresso/60 via-espresso/20 to-transparent" />
             <div className="absolute inset-0 flex flex-col justify-center p-8 sm:p-12 lg:p-20">
               <p className="eyebrow text-mango-soft">The Collection</p>
               <h2 className="mt-4 max-w-md font-display text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] text-jasmine">

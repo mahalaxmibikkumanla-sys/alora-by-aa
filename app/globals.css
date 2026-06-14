@@ -18,10 +18,15 @@
   --color-sage: #9aa88c; /* Soft Sage Green — botanical accent */
   --color-sage-soft: #c2cdb6;
 
+  /* ---- Color: Warm darks (never cold grey) ---- */
+  --color-espresso: #3a2c20; /* warm espresso — luxe dark sections */
+  --color-cocoa: #5d4632; /* mid warm brown — gradient partner */
+  --color-clay: #b9734e; /* warm terracotta — sunset accent */
+
   /* ---- Color: Typography ---- */
-  --color-charcoal: #2b2926; /* Deep Charcoal — primary text */
-  --color-taupe: #6b6458; /* muted body text */
-  --color-line: #e6dcc9; /* hairline dividers */
+  --color-charcoal: #2e2620; /* warm near-black — primary text */
+  --color-taupe: #6b5d4c; /* warm muted body text */
+  --color-line: #ece0cc; /* hairline dividers */
 
   /* ---- Fonts (wired to next/font variables in layout.tsx) ---- */
   --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;

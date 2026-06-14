@@ -202,8 +202,8 @@ export const products: Product[] = [
     name: "Monsoon Charcoal Trench",
     collection: "Golden Hour",
     price: 18900,
-    images: ["F5", "F4"],
-    tone: "shade",
+    images: ["F4", "F1", "F5"],
+    tone: "sand",
     shortDesc: "A sculptural trench for soft grey skies.",
     description:
       "A modern take on the trench in water-resistant cotton gabardine — belted, collared, and cut for an elegant drape.",
@@ -378,8 +378,8 @@ export const products: Product[] = [
     name: "Twilight Silk Gown",
     collection: "Golden Hour",
     price: 19800,
-    images: ["F5", "F10"],
-    tone: "shade",
+    images: ["F10", "F4"],
+    tone: "sand",
     shortDesc: "An understated gown for the evening's last light.",
     description:
       "Pared-back and quietly elegant, the Twilight gown drapes in fluid silk with a deep open back.",

@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         {/* Legibility scrim — darker where the copy sits (bottom on mobile, left
             on desktop) while the warm photo glows through on the open side. */}
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/65 via-charcoal/25 to-transparent lg:bg-gradient-to-r lg:from-charcoal/75 lg:via-charcoal/35 lg:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-espresso/65 via-espresso/25 to-transparent lg:bg-gradient-to-r lg:from-espresso/70 lg:via-espresso/30 lg:to-transparent" />
 
         <div className="container-px relative flex h-full flex-col justify-end pb-24 lg:justify-center lg:pb-0">
           <div className="animate-rise max-w-xl">

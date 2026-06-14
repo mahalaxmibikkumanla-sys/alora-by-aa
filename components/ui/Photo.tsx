@@ -7,7 +7,7 @@ const toneBg: Record<string, string> = {
   sand: "linear-gradient(150deg,#f3e7d2,#cdb389)",
   sage: "linear-gradient(150deg,#e7ead9,#9aa88c)",
   gold: "linear-gradient(150deg,#f0dcb4,#c0913f)",
-  shade: "linear-gradient(150deg,#6b6458,#2b2926)",
+  shade: "linear-gradient(150deg,#8a6a4c,#3a2c20)",
   ivory: "linear-gradient(150deg,#fdfbf6,#ece0cc)",
 };
 

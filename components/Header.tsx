@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <>
       {/* slim announcement bar */}
-      <div className="bg-charcoal text-jasmine">
+      <div className="bg-espresso text-jasmine">
         <p className="container-px py-2 text-center text-[0.62rem] font-medium uppercase tracking-[0.24em]">
           Complimentary worldwide shipping over ₹15,000 · Wrapped by hand
         </p>
