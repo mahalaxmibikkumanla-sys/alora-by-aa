@@ -18,6 +18,12 @@
   --color-sage: #9aa88c; /* Soft Sage Green — botanical accent */
   --color-sage-soft: #c2cdb6;
 
+  /* ---- Color: Jewel tones (South Asian heritage + quiet luxury) ---- */
+  --color-royal-red: #8b2e2e; /* Deep burgundy — regal, heirloom vibes */
+  --color-royal-red-soft: #a84444; /* lighter for accents */
+  --color-emerald: #1b5e4a; /* Deep jewel green — richness */
+  --color-sapphire: #0f3a5e; /* Deep navy-blue — sophistication */
+
   /* ---- Color: Warm darks (never cold grey) ---- */
   --color-espresso: #3a2c20; /* warm espresso — luxe dark sections */
   --color-cocoa: #5d4632; /* mid warm brown — gradient partner */

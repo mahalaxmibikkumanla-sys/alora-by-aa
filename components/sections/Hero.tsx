@@ -23,13 +23,13 @@ export default function Hero() {
 
         <div className="container-px relative flex h-full flex-col justify-end pb-24 lg:justify-center lg:pb-0">
           <div className="animate-rise max-w-xl">
-            <p className="eyebrow text-mango-soft">AlorA by AA · Summer Bloom</p>
+            <p className="eyebrow text-mango-soft">AlorA by AA · Heritage Heirloom</p>
             <h1 className="mt-5 font-display text-[clamp(2.75rem,7vw,5.5rem)] font-medium leading-[1.02] text-jasmine">
-              Crafted for the woman who carries elegance effortlessly.
+              Embroidered for the woman who celebrates her heritage.
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-jasmine/85">
-              Handmade pieces that feel like a warm summer morning — soft,
-              timeless, and quietly luxurious.
+              Handcrafted with intricate embroidery and heritage fabrics — pieces
+              stitched to be cherished for generations, not just seasons.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <ButtonLink href="/shop" variant="primary" size="lg">

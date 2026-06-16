@@ -13,15 +13,15 @@ const sizes: Record<Size, string> = {
 };
 
 const variants: Record<Variant, string> = {
-  // solid charcoal — primary action
+  // solid charcoal — primary action, royal red on hover for regal luxury
   primary:
-    "bg-charcoal text-jasmine hover:bg-mango hover:text-charcoal shadow-[var(--shadow-soft)]",
+    "bg-charcoal text-jasmine hover:bg-royal-red hover:text-jasmine shadow-[var(--shadow-soft)]",
   // outlined — secondary action
   secondary:
-    "border border-charcoal/30 text-charcoal hover:border-mango hover:text-mango bg-transparent",
+    "border border-charcoal/30 text-charcoal hover:border-royal-red hover:text-royal-red bg-transparent",
   // text link with gold underline reveal
   ghost:
-    "text-charcoal px-0 py-1 border-b border-transparent hover:border-mango hover:text-mango tracking-[0.2em]",
+    "text-charcoal px-0 py-1 border-b border-transparent hover:border-royal-red hover:text-royal-red tracking-[0.2em]",
 };
 
 function classes(variant: Variant, size: Size, className: string) {

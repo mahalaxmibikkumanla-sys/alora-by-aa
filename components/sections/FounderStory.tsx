@@ -30,25 +30,27 @@ export default function FounderStory() {
         {/* story */}
         <Reveal as="div" delay={120} className="order-1 lg:order-2">
           <JasmineSprig className="w-28 opacity-80" />
-          <p className="eyebrow mt-4">Our Story</p>
+          <p className="eyebrow mt-4">Our Heritage</p>
           <h2 className="mt-4 font-display text-[clamp(1.75rem,4vw,2.75rem)] leading-tight">
-            Two friends, one shared dream of timeless beauty.
+            Two friends, one family tradition of embroidered elegance.
           </h2>
           <div className="mt-6 space-y-4 text-[0.97rem] leading-relaxed text-taupe">
             <p>
-              AlorA began the way the best things do — between two friends,
+              AlorA was born from a shared memory —
               <strong className="font-medium text-charcoal"> Alekhya</strong> and
-              <strong className="font-medium text-charcoal"> Akhila</strong>, over
-              slow summer afternoons and a shared love of beautifully made things.
+              <strong className="font-medium text-charcoal"> Akhila</strong> watching
+              mothers and grandmothers stitch intricate embroidery into heirloom pieces.
+              We wanted to carry that craft forward.
             </p>
             <p>
-              We remembered jasmine blooming in the evening, mango season at our
-              grandmothers&rsquo; homes, and cotton dresses moving in a warm
-              breeze. We wanted to fold that feeling into every piece we make.
+              We source heritage fabrics from traditional weavers, collaborate with
+              artisans who learned embroidery from their families, and stitch each
+              piece with intention. Every thread tells a story of generational
+              craftsmanship.
             </p>
             <p>
-              Each garment is crafted slowly, with real attention to fabric, fit,
-              and the quiet confidence of the woman who&rsquo;ll wear it.
+              AlorA pieces are meant to be worn, loved, and passed down — quiet luxury
+              that whispers of heritage, not louder trends.
             </p>
           </div>
           <p className="mt-6 font-display text-2xl italic text-charcoal">

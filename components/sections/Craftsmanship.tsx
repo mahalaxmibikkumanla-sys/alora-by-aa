@@ -5,23 +5,23 @@ import type { SVGProps } from "react";
 
 const pillars = [
   {
-    title: "Considered Fabric",
-    body: "Natural cottons, linens and silk-blends, sourced for how they feel against the skin in summer heat.",
+    title: "Heritage Fabrics",
+    body: "Sourced from master weavers — natural cottons, linens, silk-blends, and Jamdani silks chosen for how they drape and feel against the skin.",
     Icon: FabricIcon,
   },
   {
-    title: "Made by Hand",
-    body: "Cut and finished by skilled artisans in small batches — never rushed, never mass-produced.",
+    title: "Embroidered by Hand",
+    body: "Each detail is stitched by skilled artisans — intricate threadwork, beading, and embellishments that take hours to perfect.",
     Icon: HandIcon,
   },
   {
-    title: "Built for Comfort",
-    body: "Fits tested on real bodies, with movement, breathability and ease designed into every seam.",
+    title: "Built for Wear",
+    body: "Reinforced seams and heirloom-quality construction designed to be worn and cherished for generations, not just seasons.",
     Icon: ComfortIcon,
   },
   {
-    title: "Made to Last",
-    body: "Reinforced construction and timeless silhouettes — pieces meant to be worn for many summers.",
+    title: "Quiet Luxury",
+    body: "Ornate details whisper rather than shout — every embroidered seam tells a story of heritage, tradition, and timeless craft.",
     Icon: LeafIcon,
   },
 ];
@@ -53,7 +53,9 @@ export default function Craftsmanship() {
 
         <div className="mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((p, i) => (
-            <Reveal key={p.title} delay={i * 90} className="text-center">
+            <Reveal key={p.title} delay={i * 90} className="relative text-center">
+              {/* subtle royal red accent bar */}
+              <div className="absolute -top-2 left-1/2 h-0.5 w-8 -translate-x-1/2 bg-royal-red-soft"></div>
               <p.Icon className="mx-auto h-12 w-12 text-mango-soft" />
               <h3 className="mt-5 font-display text-2xl text-jasmine">{p.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-jasmine/70">{p.body}</p>
