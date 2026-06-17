@@ -14,29 +14,29 @@ const seasons: { [key: string]: SeasonConfig } = {
     collection: 'MOKSH',
     label: 'Made to move',
     backgroundImage:
-      'url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&h=800&fit=crop)',
-    description: 'Freedom. Lightness. Golden hour.',
+      'url(https://images.unsplash.com/photo-1595777707802-9b97cb6c68fa?w=1400&h=800&fit=crop)',
+    description: 'Flowing teal dress. Movement. Ease.',
   },
   monsoon: {
     collection: 'ANUBHAV',
     label: 'A feeling worn',
     backgroundImage:
-      'url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1400&h=800&fit=crop)',
-    description: 'Experience. Texture. Sensory.',
+      'url(https://images.unsplash.com/photo-1582142747939-f5b6aff0e5ee?w=1400&h=800&fit=crop)',
+    description: 'Deep jewel-tone dress. Texture. Craft visible.',
   },
   winter: {
     collection: 'TAARA',
     label: 'Worn under stars',
     backgroundImage:
-      'url(https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1400&h=800&fit=crop)',
-    description: 'Luminous. Clear. Celebration.',
+      'url(https://images.unsplash.com/photo-1595777707802-9b97cb6c68fa?w=1400&h=800&fit=crop)',
+    description: 'Gold/luminous dress. Celebration. Drama.',
   },
   spring: {
     collection: 'NIYYAT',
     label: 'Intention in bloom',
     backgroundImage:
-      'url(https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400&h=800&fit=crop)',
-    description: 'Growth. Intention. New.',
+      'url(https://images.unsplash.com/photo-1595607826421-9c489ac6a96d?w=1400&h=800&fit=crop)',
+    description: 'Soft floral dress. Growth. Bloom.',
   },
 };
 
@@ -62,8 +62,8 @@ export default function HeroSeasonal() {
         style={{ backgroundImage: seasonConfig.backgroundImage }}
       />
 
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* Subtle dark overlay — let garment shine through */}
+      <div className="absolute inset-0 bg-black/25" />
 
       {/* Content */}
       <div className="container-px relative flex h-full flex-col items-center justify-center">
