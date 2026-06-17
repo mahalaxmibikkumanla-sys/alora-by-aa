@@ -8,7 +8,7 @@ export default function Stories() {
         <Reveal>
           <p className="text-sm uppercase tracking-widest text-gold">Stories</p>
           <h2 className="mt-3 font-display text-[clamp(2rem,4vw,2.75rem)] leading-tight text-charcoal">
-            How pieces find their people
+            Worn close, worn forward
           </h2>
         </Reveal>
 
@@ -27,19 +27,18 @@ export default function Stories() {
           <Reveal delay={100}>
             <div>
               <h3 className="font-display text-2xl text-charcoal">
-                Made for the moments that matter
+                These pieces find their people
               </h3>
               <p className="mt-4 leading-relaxed text-taupe">
-                Every piece leaves our studio with the hope that it becomes part of someone's story.
-                We hear back — about weddings, celebrations, quiet mornings, the everyday moments that deserve
-                to be worn well.
+                They're worn to weddings and quiet mornings. To celebrations and the everyday moments that ask to be held close.
+                Each piece carries the hope that it becomes woven into someone's story — lived in, cared for, passed forward.
               </p>
               <p className="mt-4 leading-relaxed text-taupe">
-                These pieces carry intention forward. They're stitched to outlast trends, worn to embody choice,
-                and kept close by people who understand that what you wear is a form of self-knowing.
+                Made to last longer than trends. Stitched to embody choice. Kept by people who understand that what you wear
+                is a conversation with yourself — a small daily choice to honor intention.
               </p>
               <p className="mt-6 font-display text-base italic text-charcoal">
-                "This dress made me feel like myself." — Customer, Mumbai
+                "This dress makes me feel like myself." — Customer, Bangalore
               </p>
             </div>
           </Reveal>

@@ -4,21 +4,21 @@ const craftPillars = [
   {
     title: 'Artisans',
     description:
-      'Skilled hands that have spent years perfecting their craft. Each piece is made by artisans who understand the weight of intention.',
+      'Hands that remember. Skill passed down, refined through years of knowing how cloth moves, how seams hold. Each stitch carries intention.',
     image:
       'https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=600&fit=crop&q=80',
   },
   {
     title: 'Fabrics',
     description:
-      'Sourced from master weavers. Natural cottons, linens, silk-blends chosen for how they feel and move. The foundation of everything.',
+      'Sourced from weavers who understand the cloth. Natural silks, linens, cottons chosen not just for beauty, but for how they age — how they know your body.',
     image:
       'https://images.unsplash.com/photo-1584622281867-f8165a8c6d53?w=500&h=600&fit=crop&q=80',
   },
   {
     title: 'Process',
     description:
-      'Cut. Stitched. Finished. No shortcuts. Every seam reinforced, every detail considered. Made to last, not made to rush.',
+      'Cut. Dyed. Stitched. Finished. Every step is a choice. No corners cut, no rush. Made to be worn, lived in, passed forward.',
     image:
       'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=600&fit=crop&q=80',
   },

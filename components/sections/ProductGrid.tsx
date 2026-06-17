@@ -116,7 +116,7 @@ export default function ProductGrid() {
             Collections
           </p>
           <h2 className="mt-3 font-display text-[clamp(2rem,4vw,2.75rem)] leading-tight text-charcoal">
-            Pieces with purpose
+            Made to be worn, lived in
           </h2>
         </Reveal>
 

@@ -23,14 +23,14 @@ export default function NewsletterMinimal() {
             Stay close
           </h2>
           <p className="mt-4 text-taupe">
-            New collections, craft stories, and moments from the studio.
+            New collections, craft stories, and the quiet moments from our studio.
           </p>
         </Reveal>
 
         {subscribed ? (
           <Reveal>
             <p className="mt-8 font-display text-base italic text-charcoal">
-              Thank you. Welcome.
+              Thank you. We'll keep you close.
             </p>
           </Reveal>
         ) : (

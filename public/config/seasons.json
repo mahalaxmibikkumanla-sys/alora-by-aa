@@ -1,26 +1,26 @@
 {
   "summer": {
     "collection": "MOKSH",
-    "label": "Made to move",
+    "label": "Woven for movement",
     "imageUrl": "https://images.unsplash.com/photo-1595777707802-9b97cb6c68fa?w=1400&h=900&fit=crop&q=80",
-    "imageAlt": "Flowing teal dress on dark background"
+    "imageAlt": "Flowing teal dress, warm natural light, artisanal details"
   },
   "monsoon": {
     "collection": "ANUBHAV",
-    "label": "A feeling worn",
+    "label": "Felt in every stitch",
     "imageUrl": "https://images.unsplash.com/photo-1582142747939-f5b6aff0e5ee?w=1400&h=900&fit=crop&q=80",
-    "imageAlt": "Deep jewel-tone dress showcasing fabric detail"
+    "imageAlt": "Deep jewel-tone dress, hands showing fabric detail and care"
   },
   "winter": {
     "collection": "TAARA",
-    "label": "Worn under stars",
+    "label": "Worn close, worn bright",
     "imageUrl": "https://images.unsplash.com/photo-1612336307429-8a88e8d08dbb?w=1400&h=900&fit=crop&q=80",
-    "imageAlt": "Gold and luminous dress on dark background"
+    "imageAlt": "Luminous dress on dark background, intimate studio lighting"
   },
   "spring": {
     "collection": "NIYYAT",
-    "label": "Intention in bloom",
+    "label": "Made with intention",
     "imageUrl": "https://images.unsplash.com/photo-1595607826421-9c489ac6a96d?w=1400&h=900&fit=crop&q=80",
-    "imageAlt": "Soft floral dress with natural elements"
+    "imageAlt": "Soft dress with jasmine and botanical elements, natural light"
   }
 }
