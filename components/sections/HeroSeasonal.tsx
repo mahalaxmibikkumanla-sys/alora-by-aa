@@ -1,44 +1,13 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 
 interface SeasonConfig {
   collection: string;
   label: string;
-  backgroundImage: string;
-  description: string;
+  imageUrl: string;
+  imageAlt: string;
 }
-
-const seasons: { [key: string]: SeasonConfig } = {
-  summer: {
-    collection: 'MOKSH',
-    label: 'Made to move',
-    backgroundImage:
-      'url(https://images.unsplash.com/photo-1595777707802-9b97cb6c68fa?w=1400&h=800&fit=crop)',
-    description: 'Flowing teal dress. Movement. Ease.',
-  },
-  monsoon: {
-    collection: 'ANUBHAV',
-    label: 'A feeling worn',
-    backgroundImage:
-      'url(https://images.unsplash.com/photo-1582142747939-f5b6aff0e5ee?w=1400&h=800&fit=crop)',
-    description: 'Deep jewel-tone dress. Texture. Craft visible.',
-  },
-  winter: {
-    collection: 'TAARA',
-    label: 'Worn under stars',
-    backgroundImage:
-      'url(https://images.unsplash.com/photo-1595777707802-9b97cb6c68fa?w=1400&h=800&fit=crop)',
-    description: 'Gold/luminous dress. Celebration. Drama.',
-  },
-  spring: {
-    collection: 'NIYYAT',
-    label: 'Intention in bloom',
-    backgroundImage:
-      'url(https://images.unsplash.com/photo-1595607826421-9c489ac6a96d?w=1400&h=800&fit=crop)',
-    description: 'Soft floral dress. Growth. Bloom.',
-  },
-};
 
 function getSeason(month: number): string {
   if (month >= 3 && month <= 5) return 'summer';
@@ -48,18 +17,32 @@ function getSeason(month: number): string {
 }
 
 export default function HeroSeasonal() {
-  const seasonConfig = useMemo(() => {
+  const [seasonConfig, setSeasonConfig] = useState<SeasonConfig | null>(null);
+
+  useEffect(() => {
+    // Load season config from JSON file
     const month = new Date().getMonth();
     const seasonKey = getSeason(month);
-    return seasons[seasonKey];
+
+    fetch('/config/seasons.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setSeasonConfig(data[seasonKey]);
+      })
+      .catch((err) => console.error('Failed to load seasons config:', err));
   }, []);
+
+  if (!seasonConfig) return null;
 
   return (
     <section className="relative h-[85vh] min-h-[560px] w-full overflow-hidden bg-black">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: seasonConfig.backgroundImage }}
+        style={{
+          backgroundImage: `url(${seasonConfig.imageUrl})`,
+          backgroundPosition: 'center',
+        }}
       />
 
       {/* Subtle dark overlay — let garment shine through */}
