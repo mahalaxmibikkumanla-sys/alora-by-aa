@@ -20,7 +20,7 @@ const products = [
   },
   {
     id: 3,
-    name: 'Heart's Intent',
+    name: "Heart's Intent",
     collection: 'NIYYAT',
     image:
       'https://images.unsplash.com/photo-1595607826421-9c489ac6a96d?w=400&h=500&fit=crop&q=80',
