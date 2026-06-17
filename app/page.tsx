@@ -1,12 +1,6 @@
-import Hero from "@/components/sections/Hero";
-import FounderStory from "@/components/sections/FounderStory";
-import FeaturedCollection from "@/components/sections/FeaturedCollection";
-import Craftsmanship from "@/components/sections/Craftsmanship";
-import BestSellers from "@/components/sections/BestSellers";
-import Lifestyle from "@/components/sections/Lifestyle";
-import CustomerLove from "@/components/sections/CustomerLove";
-import TrustBlock from "@/components/sections/TrustBlock";
+import HeroSeasonal from "@/components/sections/HeroSeasonal";
 import Newsletter from "@/components/sections/Newsletter";
+import LotusDivider from "@/components/ui/LotusDivider";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -28,15 +22,11 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Hero />
-      <FounderStory />
-      <FeaturedCollection />
-      <Craftsmanship />
-      <BestSellers />
-      <Lifestyle />
-      <CustomerLove />
-      <TrustBlock />
-      <Newsletter />
+      <HeroSeasonal />
+      <LotusDivider />
+      <div className="bg-ivory py-20 text-center">
+        <p className="text-charcoal">More sections coming...</p>
+      </div>
     </>
   );
 }

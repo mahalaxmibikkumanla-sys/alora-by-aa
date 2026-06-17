@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Mulish } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
 
-/* Editorial display serif — luxury fashion-magazine feel */
+/* Editorial display serif — elongated elegance of Indian gold work */
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
@@ -13,9 +13,9 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-/* Clean, highly readable contemporary sans */
-const mulish = Mulish({
-  variable: "--font-mulish",
+/* Modern, clean body font — tech-savvy Indian audience */
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${mulish.variable} h-full`}
+      className={`${cormorant.variable} ${dmSans.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-jasmine text-charcoal">
         {/* If JS is disabled, never hide scroll-reveal content. */}

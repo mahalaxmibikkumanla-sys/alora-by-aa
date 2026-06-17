@@ -6,44 +6,40 @@
    ========================================================================= */
 
 @theme {
-  /* ---- Color: Primary (warm neutrals) ---- */
-  --color-jasmine: #fdfbf6; /* Jasmine White — page base */
-  --color-ivory: #f6efe3; /* Warm Ivory — alt sections */
-  --color-sand: #e7d8c2; /* Soft Sand Beige — cards, fills */
-  --color-sand-deep: #d8c4a6; /* deeper sand for borders/contrast */
+  /* ---- Color: Luxury Minimal (Ivory + Black + Gold) ---- */
+  --color-ivory: #FAF7F2; /* Ivory — page base, breathing room */
+  --color-black: #1a1a1a; /* Black — typography, depth, hero accents */
+  --color-gold: #C9A84C; /* Gold — dividers, craft details, warmth */
 
-  /* ---- Color: Secondary (accents, used sparingly) ---- */
-  --color-mango: #c0913f; /* Muted Mango Gold — premium accent */
-  --color-mango-soft: #d8b878; /* lighter gold for hovers/lines */
-  --color-sage: #9aa88c; /* Soft Sage Green — botanical accent */
-  --color-sage-soft: #c2cdb6;
-
-  /* ---- Color: Jewel tones (South Asian heritage + quiet luxury) ---- */
-  --color-royal-red: #8b2e2e; /* Deep burgundy — regal, heirloom vibes */
-  --color-royal-red-soft: #a84444; /* lighter for accents */
-  --color-emerald: #1b5e4a; /* Deep jewel green — richness */
-  --color-sapphire: #0f3a5e; /* Deep navy-blue — sophistication */
-
-  /* ---- Color: Warm darks (never cold grey) ---- */
-  --color-espresso: #3a2c20; /* warm espresso — luxe dark sections */
-  --color-cocoa: #5d4632; /* mid warm brown — gradient partner */
-  --color-clay: #b9734e; /* warm terracotta — sunset accent */
+  /* ---- Supporting neutrals ---- */
+  --color-off-white: #f5f3f0; /* subtle section breaks */
+  --color-light-gray: #e8e8e8; /* borders, minimal dividers */
 
   /* ---- Color: Typography ---- */
-  --color-charcoal: #2e2620; /* warm near-black — primary text */
-  --color-taupe: #6b5d4c; /* warm muted body text */
-  --color-line: #ece0cc; /* hairline dividers */
+  --color-charcoal: #1a1a1a; /* primary text (black) */
+  --color-taupe: #6b6b6b; /* secondary text, muted */
+  --color-line: #e8e8e8; /* hairline dividers */
+
+  /* ---- Legacy (for compatibility, mapped to new palette) ---- */
+  --color-jasmine: #FAF7F2;
+  --color-sand: #f5f3f0;
+  --color-mango: #C9A84C;
+  --color-mango-soft: #d4b366;
+  --color-sage: #6b6b6b;
+  --color-espresso: #1a1a1a;
+  --color-cocoa: #2a2a2a;
+  --color-clay: #C9A84C;
 
   /* ---- Fonts (wired to next/font variables in layout.tsx) ---- */
   --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
-  --font-sans: var(--font-mulish), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-dm-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-  /* ---- Editorial type scale (fluid, mobile-first) ---- */
-  --text-display: clamp(2.75rem, 7vw, 5.5rem);
-  --text-h1: clamp(2.25rem, 5.5vw, 4rem);
-  --text-h2: clamp(1.75rem, 4vw, 2.75rem);
-  --text-h3: clamp(1.35rem, 2.6vw, 1.85rem);
-  --text-eyebrow: 0.72rem;
+  /* ---- Editorial type scale (fluid, mobile-first, with restraint) ---- */
+  --text-display: clamp(2.5rem, 6vw, 4.5rem); /* Cormorant large, but controlled */
+  --text-h1: clamp(2rem, 5vw, 3.5rem);
+  --text-h2: clamp(1.5rem, 3.5vw, 2.25rem);
+  --text-h3: clamp(1.15rem, 2.2vw, 1.5rem);
+  --text-eyebrow: 0.68rem; /* subtle, uppercase */
 
   /* ---- Soft shadows (never harsh) ---- */
   --shadow-soft: 0 18px 40px -24px rgba(43, 41, 38, 0.22);
