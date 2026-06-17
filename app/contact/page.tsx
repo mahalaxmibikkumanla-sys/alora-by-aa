@@ -33,7 +33,7 @@ export default function Contact() {
             <div className="text-center">
               <p className="font-display text-2xl text-charcoal">Thank you for reaching out.</p>
               <p className="mt-2 text-taupe">
-                We'll get back to you within 24 hours.
+                We&rsquo;ll get back to you within 24 hours.
               </p>
             </div>
           ) : (

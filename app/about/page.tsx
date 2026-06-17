@@ -46,10 +46,10 @@ export default function About() {
           </h2>
           <div className="mt-8 space-y-4 text-[0.97rem] leading-relaxed text-taupe">
             <p>
-              Alekhya and Akhila met years ago over a shared love of warm summers, golden-hour light, and the feeling of wearing something beautifully made. On slow afternoons, they talked about the clothes they wished existed — pieces that felt handmade, that honoured the body, that didn't fade with the season.
+              Alekhya and Akhila met years ago over a shared love of warm summers, golden-hour light, and the feeling of wearing something beautifully made. On slow afternoons, they talked about the clothes they wished existed — pieces that felt handmade, that honoured the body, that didn&rsquo;t fade with the season.
             </p>
             <p>
-              In 2024, that conversation became AlorA. Every piece is a reflection of their friendship, their values, and their belief that luxury shouldn't feel distant or cold. It should feel like discovering something precious that was always meant for you.
+              In 2024, that conversation became AlorA. Every piece is a reflection of their friendship, their values, and their belief that luxury shouldn&rsquo;t feel distant or cold. It should feel like discovering something precious that was always meant for you.
             </p>
             <p>
               Today, AlorA dresses women who understand that the best things take time. Women who choose quality over quantity, presence over noise, and authenticity over perfection.

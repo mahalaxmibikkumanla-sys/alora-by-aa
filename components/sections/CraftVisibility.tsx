@@ -6,14 +6,14 @@ const craftPillars = [
     description:
       'Hands that remember. Skill passed down, refined through years of knowing how cloth moves, how seams hold. Each stitch carries intention.',
     image:
-      'https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=600&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1657040006951-c0938ea647bd?w=500&h=600&fit=crop&q=80',
   },
   {
     title: 'Fabrics',
     description:
       'Sourced from weavers who understand the cloth. Natural silks, linens, cottons chosen not just for beauty, but for how they age — how they know your body.',
     image:
-      'https://images.unsplash.com/photo-1584622281867-f8165a8c6d53?w=500&h=600&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1528458909336-e7a0adfed0a5?w=500&h=600&fit=crop&q=80',
   },
   {
     title: 'Process',

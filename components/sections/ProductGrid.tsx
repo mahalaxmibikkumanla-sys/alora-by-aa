@@ -7,7 +7,7 @@ const products = [
     name: 'Intention in Bloom',
     collection: 'NIYYAT',
     image:
-      'https://images.unsplash.com/photo-1595777707802-9b97cb6c68fa?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1564474881250-b40b4464cd0f?w=400&h=500&fit=crop&q=80',
     price: '₹8,500',
   },
   {
@@ -15,7 +15,7 @@ const products = [
     name: 'Purpose Worn',
     collection: 'NIYYAT',
     image:
-      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1747396206869-75ea57b325ce?w=400&h=500&fit=crop&q=80',
     price: '₹7,200',
   },
   {
@@ -23,7 +23,7 @@ const products = [
     name: "Heart's Intent",
     collection: 'NIYYAT',
     image:
-      'https://images.unsplash.com/photo-1595607826421-9c489ac6a96d?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?w=400&h=500&fit=crop&q=80',
     price: '₹9,100',
   },
 
@@ -33,7 +33,7 @@ const products = [
     name: 'Felt Moment',
     collection: 'ANUBHAV',
     image:
-      'https://images.unsplash.com/photo-1582142747939-f5b6aff0e5ee?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1764298493197-a1c1cce57800?w=400&h=500&fit=crop&q=80',
     price: '₹8,900',
   },
   {
@@ -41,7 +41,7 @@ const products = [
     name: 'Sensory Evening',
     collection: 'ANUBHAV',
     image:
-      'https://images.unsplash.com/photo-1612336307429-8a88e8d08dbb?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1623421536321-f4036ba3fe6b?w=400&h=500&fit=crop&q=80',
     price: '₹7,800',
   },
   {
@@ -49,7 +49,7 @@ const products = [
     name: 'Experience Worn',
     collection: 'ANUBHAV',
     image:
-      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1728205104611-061fa1465f85?w=400&h=500&fit=crop&q=80',
     price: '₹8,600',
   },
 
@@ -59,7 +59,7 @@ const products = [
     name: 'Under Stars',
     collection: 'TAARA',
     image:
-      'https://images.unsplash.com/photo-1612336307429-8a88e8d08dbb?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1732263993951-36403aca3a1f?w=400&h=500&fit=crop&q=80',
     price: '₹9,300',
   },
   {
@@ -67,7 +67,7 @@ const products = [
     name: 'Luminous Night',
     collection: 'TAARA',
     image:
-      'https://images.unsplash.com/photo-1595777707802-9b97cb6c68fa?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1656276926800-b47a0bc5aac0?w=400&h=500&fit=crop&q=80',
     price: '₹8,200',
   },
   {
@@ -75,7 +75,7 @@ const products = [
     name: 'Star-Bright',
     collection: 'TAARA',
     image:
-      'https://images.unsplash.com/photo-1582142747939-f5b6aff0e5ee?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1752074212249-d1c5e28d1efb?w=400&h=500&fit=crop&q=80',
     price: '₹7,950',
   },
 
@@ -85,7 +85,7 @@ const products = [
     name: 'Freedom to Move',
     collection: 'MOKSH',
     image:
-      'https://images.unsplash.com/photo-1595607826421-9c489ac6a96d?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1564701999220-80741d357cb6?w=400&h=500&fit=crop&q=80',
     price: '₹8,400',
   },
   {
@@ -93,7 +93,7 @@ const products = [
     name: 'Ease of Being',
     collection: 'MOKSH',
     image:
-      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1620140786352-43d7e7a1cfcb?w=400&h=500&fit=crop&q=80',
     price: '₹7,600',
   },
   {
@@ -101,7 +101,7 @@ const products = [
     name: 'Movement Unbound',
     collection: 'MOKSH',
     image:
-      'https://images.unsplash.com/photo-1612336307429-8a88e8d08dbb?w=400&h=500&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=500&fit=crop&q=80',
     price: '₹8,700',
   },
 ];

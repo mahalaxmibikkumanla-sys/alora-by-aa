@@ -2,25 +2,25 @@
   "summer": {
     "collection": "MOKSH",
     "label": "Woven for movement",
-    "imageUrl": "https://images.unsplash.com/photo-1595777707802-9b97cb6c68fa?w=1400&h=900&fit=crop&q=80",
-    "imageAlt": "Flowing teal dress, warm natural light, artisanal details"
+    "imageUrl": "https://images.unsplash.com/photo-1694971112579-464e82f35a13?w=1400&h=900&fit=crop&q=80",
+    "imageAlt": "Flowing dress on the beach in golden-hour light, fabric in motion"
   },
   "monsoon": {
     "collection": "ANUBHAV",
     "label": "Felt in every stitch",
-    "imageUrl": "https://images.unsplash.com/photo-1582142747939-f5b6aff0e5ee?w=1400&h=900&fit=crop&q=80",
-    "imageAlt": "Deep jewel-tone dress, hands showing fabric detail and care"
+    "imageUrl": "https://images.unsplash.com/photo-1657040006951-c0938ea647bd?w=1400&h=900&fit=crop&q=80",
+    "imageAlt": "Warm hands resting on draped fabric, showing care and detail"
   },
   "winter": {
     "collection": "TAARA",
     "label": "Worn close, worn bright",
-    "imageUrl": "https://images.unsplash.com/photo-1612336307429-8a88e8d08dbb?w=1400&h=900&fit=crop&q=80",
-    "imageAlt": "Luminous dress on dark background, intimate studio lighting"
+    "imageUrl": "https://images.unsplash.com/photo-1585131609775-8eecc878fdfc?w=1400&h=900&fit=crop&q=80",
+    "imageAlt": "Luminous dress against a dark, intimate studio background"
   },
   "spring": {
     "collection": "NIYYAT",
     "label": "Made with intention",
-    "imageUrl": "https://images.unsplash.com/photo-1595607826421-9c489ac6a96d?w=1400&h=900&fit=crop&q=80",
-    "imageAlt": "Soft dress with jasmine and botanical elements, natural light"
+    "imageUrl": "https://images.unsplash.com/photo-1726672527696-af55e0d85163?w=1400&h=900&fit=crop&q=80",
+    "imageAlt": "Soft cream dress among white flowers in an olive grove, natural light"
   }
 }

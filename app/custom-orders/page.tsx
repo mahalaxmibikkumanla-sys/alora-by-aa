@@ -23,7 +23,7 @@ export default function CustomOrders() {
             <h2 className="font-display text-2xl text-charcoal">The Process</h2>
             <div className="mt-6 space-y-4 text-taupe">
               <p>
-                Custom orders begin with a conversation. Tell us your vision — the silhouette, the fabric, the colours that speak to you. We'll guide you through the design process, source the finest materials, and create something entirely unique.
+                Custom orders begin with a conversation. Tell us your vision — the silhouette, the fabric, the colours that speak to you. We&rsquo;ll guide you through the design process, source the finest materials, and create something entirely unique.
               </p>
               <p>
                 Each custom piece takes 8–10 weeks from design to delivery. We fit closely with you to ensure the final garment is perfect.

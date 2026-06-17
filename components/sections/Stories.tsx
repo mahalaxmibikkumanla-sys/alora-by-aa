@@ -17,7 +17,7 @@ export default function Stories() {
           <Reveal>
             <div className="overflow-hidden rounded-sm bg-light-gray">
               <img
-                src="https://images.unsplash.com/photo-1539008588435-666d2da3aeba?w=600&h=700&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1607960402358-a5ceb04ebeb3?w=600&h=700&fit=crop&q=80"
                 alt="Customer wearing AlorA piece"
                 className="aspect-[3/4] w-full object-cover"
               />
@@ -30,15 +30,15 @@ export default function Stories() {
                 These pieces find their people
               </h3>
               <p className="mt-4 leading-relaxed text-taupe">
-                They're worn to weddings and quiet mornings. To celebrations and the everyday moments that ask to be held close.
-                Each piece carries the hope that it becomes woven into someone's story — lived in, cared for, passed forward.
+                They&rsquo;re worn to weddings and quiet mornings. To celebrations and the everyday moments that ask to be held close.
+                Each piece carries the hope that it becomes woven into someone&rsquo;s story — lived in, cared for, passed forward.
               </p>
               <p className="mt-4 leading-relaxed text-taupe">
                 Made to last longer than trends. Stitched to embody choice. Kept by people who understand that what you wear
                 is a conversation with yourself — a small daily choice to honor intention.
               </p>
               <p className="mt-6 font-display text-base italic text-charcoal">
-                "This dress makes me feel like myself." — Customer, Bangalore
+                &ldquo;This dress makes me feel like myself.&rdquo; — Customer, Bangalore
               </p>
             </div>
           </Reveal>

@@ -30,7 +30,7 @@ export default function NewsletterMinimal() {
         {subscribed ? (
           <Reveal>
             <p className="mt-8 font-display text-base italic text-charcoal">
-              Thank you. We'll keep you close.
+              Thank you. We&rsquo;ll keep you close.
             </p>
           </Reveal>
         ) : (
