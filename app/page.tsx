@@ -1,6 +1,8 @@
 import HeroSeasonal from "@/components/sections/HeroSeasonal";
 import CraftVisibility from "@/components/sections/CraftVisibility";
-import Newsletter from "@/components/sections/Newsletter";
+import ProductGrid from "@/components/sections/ProductGrid";
+import Stories from "@/components/sections/Stories";
+import NewsletterMinimal from "@/components/sections/NewsletterMinimal";
 import LotusDivider from "@/components/ui/LotusDivider";
 
 const jsonLd = {
@@ -27,9 +29,11 @@ export default function Home() {
       <LotusDivider />
       <CraftVisibility />
       <LotusDivider />
-      <div className="bg-ivory py-20 text-center">
-        <p className="text-charcoal">Product grid + Stories + Newsletter coming...</p>
-      </div>
+      <ProductGrid />
+      <LotusDivider />
+      <Stories />
+      <LotusDivider />
+      <NewsletterMinimal />
     </>
   );
 }
