@@ -1,4 +1,5 @@
 import HeroSeasonal from "@/components/sections/HeroSeasonal";
+import CraftVisibility from "@/components/sections/CraftVisibility";
 import Newsletter from "@/components/sections/Newsletter";
 import LotusDivider from "@/components/ui/LotusDivider";
 
@@ -24,8 +25,10 @@ export default function Home() {
       />
       <HeroSeasonal />
       <LotusDivider />
+      <CraftVisibility />
+      <LotusDivider />
       <div className="bg-ivory py-20 text-center">
-        <p className="text-charcoal">More sections coming...</p>
+        <p className="text-charcoal">Product grid + Stories + Newsletter coming...</p>
       </div>
     </>
   );
